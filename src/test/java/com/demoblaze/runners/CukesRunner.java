@@ -1,4 +1,4 @@
-package com.kraftech.runners;
+package com.demoblaze.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -6,14 +6,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"json:target/cucumber.json",
-                "html:target/default-html-reports.html",
-                "rerun:target/rerun.txt"
+        plugin = { "json:target/cucumber.json",
+                "html:target/default-html-reports.html"
         },
         features = "src/test/resources/features",
-        glue = "com/kraftech/stepDefinitions",
+        glue = "com/demoblaze/step_definitions",
         dryRun = false,
-        tags = "@c_ddf"
+        tags = "@plt1"
 )
 public class CukesRunner {
 }
